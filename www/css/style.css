@@ -4,12 +4,7 @@ body, html {
 }
 
 body {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flexbox;
-	display: -ms-flex;
-	display: flex;
-	flex-direction: column;
+	display: grid;
 }
 
 p, span, h1, h2, h3, h4, h5, h6, b {
@@ -19,6 +14,12 @@ p, span, h1, h2, h3, h4, h5, h6, b {
 
 .pos--fixed {
 	position: fixed;
+}
+
+.logos img {
+	max-width: 150px;
+	max-height: 150px;
+	margin: 15px;
 }
 
 .thank-you-need-help p, .thank-you-need-help p span {
@@ -49,6 +50,48 @@ p, span, h1, h2, h3, h4, h5, h6, b {
 	display: -ms-flexbox;
 	display: -ms-flex;
 	display: flex;
+}
+
+.row {
+	padding-top: 100px; 
+	padding-bottom: 100px;
+}
+
+.row .row {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.main-content>.row:first-child {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.main-content>.row:last-of-type {
+	padding-bottom: 100px;
+}
+
+.header-banner {
+	padding-top: 0px;
+}
+
+.header-banner .row{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.header-banner .row.header-banner__buttons{
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.header-banner__buttons a {
+	margin: 20px auto;
+}
+
+.header {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 #banner {
@@ -149,6 +192,10 @@ p, span, h1, h2, h3, h4, h5, h6, b {
 	margin-top: auto;
 }
 
+.footer.row {
+	padding-bottom: 0;
+}
+
 .footer {
 	margin-top: 60px;
 	padding-top: 20px;
@@ -208,9 +255,12 @@ p, span, h1, h2, h3, h4, h5, h6, b {
 }
 
 .logo {
-	width: 180px;
-	height: 88px;
+	height: 120px;
 	display: block;
+}
+
+.logo img {
+	max-height: 100%;
 }
 
 .navigation li {
@@ -344,8 +394,6 @@ h1 ~ p {
 
 .how-it-works {
 	background-color: #F9F8FF;
-	padding-top: 200px;
-	padding-bottom: 50px;
 }
 
 .padding-100 {
@@ -487,9 +535,15 @@ h3 {
 	border-top: 1px solid #262626;
 	border-bottom: 1px solid #262626;
 	color: #fff;
-	transform: translate(0px, 50%);
 	padding: 20px;
-	margin-top: -100px;
+}
+
+.notif h2 {
+	margin: 0px auto;
+}
+
+.codex h2 {
+	margin-top: 30px;
 }
 
 .notif p {
@@ -498,6 +552,8 @@ h3 {
 	color: #262626;
 	margin-bottom: 0;
 	padding: 15px 10px;
+	max-width: 600px;
+	margin: 0px auto;
 }
 
 .notif b {
@@ -554,6 +610,12 @@ h3 {
 	margin-bottom: 0;
 }
 
+@media screen and (min-width: 576px) {
+	.header-banner__buttons a {
+		margin: 0px auto;
+	}
+}
+
 @media screen and (min-width: 620px) {
 	.notif {
 		margin-top: 0;
@@ -570,6 +632,14 @@ h3 {
 		position: relative;
 		border: none;
 		top: 0;
+	}
+
+	.logo {
+		height: 100px;
+	}
+
+	.header-banner {
+		padding-top: 30px;
 	}
 
 	.small-order-2 ~ .col-md-4 {
@@ -646,7 +716,7 @@ h3 {
 	}
 
 	.content-w-pic > div.col-md-4 {
-		max-height: 1000px
+		max-height: 1000px;
 		overflow: none;
 		margin-bottom: 0;
 	}
@@ -664,9 +734,13 @@ h3 {
 		font-family: Poppins, arial;
 	}
 
+	.header-banner .row.header-banner__buttons{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
 	.logo {
-		width: 245px;
-		height: 70px;
+		height: 130px;
 		display: block;
 	}
 
@@ -711,6 +785,11 @@ h3 {
 
 	h1 {
 		font-size: 40px;
+		margin-bottom: 50px;
+	}
+
+	.logo {
+		height: 150px;
 	}
 
 	.thank-you-need-help p span, .thank-you-need-help p{
@@ -737,11 +816,6 @@ h3 {
 		font-size: 20px;
 		line-height: 40px;
 		color: #262626;
-	}
-
-	.how-it-works {
-		padding-top: 200px;
-		padding-bottom: 100px;
 	}
 
 	h2 {
