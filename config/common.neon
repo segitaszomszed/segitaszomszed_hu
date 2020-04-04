@@ -16,9 +16,10 @@ session:
 	expiration: 14 days
 
 translation:
+    whitelist: [hu, cs]
 	debugger: true
-	default: cs
-	fallback: [cs_CZ, cs]
+	default: hu
+	fallback: [hu_HU, hu, cs_CZ, cs]
 
 doctrine.orm:
     configuration:
