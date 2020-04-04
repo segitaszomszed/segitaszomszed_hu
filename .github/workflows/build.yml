@@ -2,9 +2,9 @@ name: 'App Build'
 
 on:
   push:
-    branches: [ master, develop ]
+    branches: [ master-hu, feature/translate_hu ]
   pull_request:
-    branches: [ master, develop ]
+    branches: [ master-hu, feature/translate_hu ]
     types: [opened, edited, synchronize, reopened]
     paths:
       - 'app/**.php'
