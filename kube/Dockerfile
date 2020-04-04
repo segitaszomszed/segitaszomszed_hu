@@ -3,7 +3,7 @@
 # docker build -f kube/Dockerfile . -t ...
 FROM composer:1.10 AS build
 COPY . /app
-RUN composer install
+RUN composer install --prefer-dist --no-progress --no-suggest
 
 FROM php:7.2-fpm
 MAINTAINER Astronaut apelttom@gmail.com
