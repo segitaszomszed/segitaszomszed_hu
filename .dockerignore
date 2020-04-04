@@ -1,0 +1,5 @@
+.git/
+.github/
+docker/
+kube/
+!kube/docker-entrypoint.sh
