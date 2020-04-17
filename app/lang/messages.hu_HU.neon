@@ -1,0 +1,20 @@
+sign:
+    logout: 'Kijelentkezett'
+    signIn: 'Belépés másik fiókkal'
+    signUp: 'Regisztráció'
+    loginInstead: 'Ha már regisztráltál, jelentkezz be'
+order:
+    orderSuccess: 'Elmentettük a megrendelését'
+    givenToCourier: 'A megrendelést kiadtuk egy futárnak'
+    statusChanged: 'A megrendelés státusza megváltozott'
+registration:
+    success: 'Sikeres regisztráció'
+    fail: 'A megadott e-mail már létezik'
+update:
+    fail: 'A megadott fiók nem létezik'
+couriersCount: 'Futárok száma'
+operatorsCount: 'Diszpécserek száma'
+coordinatorsCount: 'Ápolók száma'
+usersWithoutAccess: 'Nem aktív fiókok száma'
+uniqueTowns: 'Városok száma'
+ordersCount: 'Megrendelések száma'
